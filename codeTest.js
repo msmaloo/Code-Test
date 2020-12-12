@@ -1,5 +1,6 @@
 ﻿var faceValue = 1;
 function changeFace() {
+    playAudio("audio1");
     if (faceValue < 4) {
         faceValue += 1;
     } 
@@ -20,4 +21,9 @@ function changeFace() {
         document.getElementById('face').src = "face 4.png";
     }
 
+}
+
+function playAudio(audioID) {
+    var audio = document.getElementById(audioID);
+    audio.play();
 }
