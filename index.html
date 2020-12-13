@@ -5,12 +5,49 @@
 
 </head>
 <body>
-    <h1>A web page</h1>
-    <img id="face", src="face 1.png" >
+    <h1>Build a Snowman!</h1>
+<div>
+<layer name="background" z-index="1" color="#7eadbc">
+</layer>
+<layer name="snowmanBase" z-index="2">
+    <img id="base", src="/snowman_images/snowballs.png" />
+</layer>
+<layer name="face Layer" z-index="2">
+    <img id="face" , src="/snowman_images/face_1.png" />
+</layer>
+<layer name="hatLayer" z-index="3">
+    <img id="hat" , src="/snowman_images/tophat.png" />
+</layer>
+<layer name="scarfLayer" z-index="4">
+    <img id="scarf", src="/snowman_images/scarf_red.png" />
+</layer>
+<layer name="armLayerR" z-index="5">
+    <img id="armR" , src="/snowman_images/branch_1_r.png" />    
+</layer>
+<layer name="armLayerL" z-index="6">
+    <img id="armL", src="/snowman_images/branch_1_l.png" />
+</layer>
+</div>
+
+    
 <script src="codeTest.js"></script>
-<button type="button" onclick="changeFace()">
-    Change my face!
+<div>
+<button type="button" onclick="changeScarf()">
+    Choose scarf
 </button>
+<button type="button" onclick="changeFace()">
+    Change my face
+</button>
+<button type="button" onclick="changeHat()">
+    Choose a hat
+</button>
+<button type="button" onclick="changeArmR()">
+    Change the right arm
+</button>
+<button type="button" onclick="changeArmL()">
+    Change the left arm
+</button>
+</div>
     <audio id="audio1" src="Oolala.mp3"></audio>
 </body>
 </html>
