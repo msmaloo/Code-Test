@@ -105,13 +105,13 @@ function changeArmL() {
     }
 
     if (armLValue == 1) {
-        document.getElementById('face').src = "snowman_images/branch_1_l.png";
+        document.getElementById('armL').src = "snowman_images/branch_1_l.png";
     }
     if (armLValue == 2) {
-        document.getElementById('face').src = "snowman_images/branch_2_l.png";
+        document.getElementById('armL').src = "snowman_images/branch_2_l.png";
     }
     if (armLValue == 3) {
-        document.getElementById('face').src = "snowman_images/branch_3_l.png";
+        document.getElementById('armL').src = "snowman_images/branch_3_l.png";
     }
 }
 
