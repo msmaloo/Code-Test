@@ -13,13 +13,13 @@ function changeFace() {
     }
 
     if (faceValue == 1) {
-        document.getElementById('face').src = "/snowman_images/face_1.png";
+        document.getElementById('face').src = "snowman_images/face_1.png";
     }
     if (faceValue == 2) {
-        document.getElementById('face').src = "/snowman_images/face_2.png";
+        document.getElementById('face').src = "snowman_images/face_2.png";
     }
     if (faceValue == 3) {
-        document.getElementById('face').src = "/snowman_images/face_3.png";
+        document.getElementById('face').src = "snowman_images/face_3.png";
     }
 }
 
@@ -33,22 +33,22 @@ function changeScarf() {
     }
 
     if (scarfValue == 1) {
-        document.getElementById('scarf').src = "/snowman_images/scarf_red.png";
+        document.getElementById('scarf').src = "snowman_images/scarf_red.png";
     }
     if (scarfValue == 2) {
-        document.getElementById('scarf').src = "/snowman_images/scarf_purple.png";
+        document.getElementById('scarf').src = "snowman_images/scarf_purple.png";
     }
     if (scarfValue == 3) {
-        document.getElementById('scarf').src = "/snowman_images/scarf_pink.png";
+        document.getElementById('scarf').src = "snowman_images/scarf_pink.png";
     }
     if (scarfValue == 4) {
-        document.getElementById('scarf').src = "/snowman_images/scarf_orange.png";
+        document.getElementById('scarf').src = "snowman_images/scarf_orange.png";
     }
     if (scarfValue == 5) {
-        document.getElementById('scarf').src = "/snowman_images/scarf_green.png";
+        document.getElementById('scarf').src = "snowman_images/scarf_green.png";
     }
     if (scarfValue == 6) {
-        document.getElementById('scarf').src = "/snowman_images/scarf_blue.png";
+        document.getElementById('scarf').src = "snowman_images/scarf_blue.png";
     }
 }
 
@@ -62,16 +62,16 @@ function changeHat() {
     }
 
     if (hatValue == 1) {
-        document.getElementById('hat').src = "/snowman_images/tophat.png";
+        document.getElementById('hat').src = "snowman_images/tophat.png";
     }
     if (hatValue == 2) {
-        document.getElementById('hat').src = "/snowman_images/warmhat.png";
+        document.getElementById('hat').src = "snowman_images/warmhat.png";
     }
     if (hatValue == 3) {
-        document.getElementById('hat').src = "/snowman_images/cap.png";
+        document.getElementById('hat').src = "snowman_images/cap.png";
     }
     if (hatValue == 4) {
-        document.getElementById('hat').src = "/snowman_images/earmuff.png";
+        document.getElementById('hat').src = "snowman_images/earmuff.png";
     }
 }
 
@@ -85,13 +85,13 @@ function changeArmR() {
     }
 
     if (armRValue == 1) {
-        document.getElementById('armR').src = "/snowman_images/branch_1_r.png";
+        document.getElementById('armR').src = "snowman_images/branch_1_r.png";
     }
     if (armRValue == 2) {
-        document.getElementById('armR').src = "/snowman_images/branch_2_r.png";
+        document.getElementById('armR').src = "snowman_images/branch_2_r.png";
     }
     if (armRValue == 3) {
-        document.getElementById('armR').src = "/snowman_images/branch_3_r.png";
+        document.getElementById('armR').src = "snowman_images/branch_3_r.png";
     }
 }
 
@@ -105,13 +105,13 @@ function changeArmL() {
     }
 
     if (armLValue == 1) {
-        document.getElementById('face').src = "/snowman_images/branch_1_l.png";
+        document.getElementById('face').src = "snowman_images/branch_1_l.png";
     }
     if (armLValue == 2) {
-        document.getElementById('face').src = "/snowman_images/branch_2_l.png";
+        document.getElementById('face').src = "snowman_images/branch_2_l.png";
     }
     if (armLValue == 3) {
-        document.getElementById('face').src = "/snowman_images/branch_3_l.png";
+        document.getElementById('face').src = "snowman_images/branch_3_l.png";
     }
 }
 
