@@ -6,49 +6,82 @@
 </head>
 <body>
     <h1>Build a Snowman!</h1>
-<div>
-<div  name="background" style="position: absolute; left: 0px; top:140px; z-index:1; display: inline-flex; align-items:center">
-    <img id="base", src="snowman_images/Layer 1.png" style="width:300px; height:300px" />
-</div>
-<div name="snowmanBase" style="position: absolute; left: 0px; top:140px; z-index:2;display: inline-flex; align-items: center">
-    <img id="base", src="snowman_images/snowballs.png" style="width:300px; height:300px" />
-</div>
-<div name="face Layer" style="position: absolute; left: 0px; top:140px; z-index:3;display: inline-flex; align-items: center">
-    <img id="face" , src="snowman_images/face_1.png" style="width:300px; height:300px"/>
-</div>
-<div  name="hatLayer" style="position: absolute; left: 0px; top:140px; z-index:4; display: inline-flex; align-items: center">
-    <img id="hat" , src="snowman_images/tophat.png" style="width:300px; height:300px"/>
-</div>
-<div name="scarfLayer" style="position: absolute; left: 0px; top:140px; z-index:5; display: inline-flex; align-items: center">
-    <img id="scarf", src="snowman_images/scarf_red.png" style="width:300px; height:300px"/>
-</div>
-<div name="armLayerR" style="position: absolute; left: 0px; top:140px; z-index:6;display: inline-flex; align-items: center">
-    <img id="armR" , src="snowman_images/branch_1_r.png" style="width:300px; height:300px"/>    
-</div>
-<div name="armLayerL" style="position: absolute; left: 0px; top:140px; z-index:7;display: inline-flex; align-items: center">
-    <img id="armL", src="snowman_images/branch_1_l.png" style="width:300px; height:300px"/>
-</div>
-</div>
+    <div>
+        <div name="background" class="snowmanLayers" style=" top:140px; z-index:1; ">
+            <img id="base" , src="snowman_images/Layer 1.png" style="width:300px; height:300px" />
+        </div>
+        <div name="snowmanBase" class="snowmanLayers" style=" top:140px; z-index:2;">
+            <img id="base" , src="snowman_images/snowballs.png" style="width:300px; height:300px" />
+        </div>
+        <div name="face Layer" class="snowmanLayers" style=" top:140px; z-index:3;">
+            <img id="face" , src="snowman_images/face_1.png" style="width:300px; height:300px" />
+        </div>
+        <div name="hatLayer" class="snowmanLayers" style=" top:140px; z-index:4;">
+            <img id="hat" , src="snowman_images/tophat.png" style="width:300px; height:300px" />
+        </div>
+        <div name="scarfLayer" class="snowmanLayers" style=" top:140px; z-index:5;">
+            <img id="scarf" , src="snowman_images/scarf_red.png" style="width:300px; height:300px" />
+        </div>
+        <div name="armLayerR" class="snowmanLayers" style=" top:140px; z-index:6;">
+            <img id="armR" , src="snowman_images/branch_1_r.png" style="width:300px; height:300px" />
+        </div>
+        <div name="armLayerL" class="snowmanLayers" style=" top:140px; z-index:7;">
+            <img id="armL" , src="snowman_images/branch_1_l.png" style="width:300px; height:300px" />
+        </div>
+    </div>
 
-    
-<script src="codeTest.js"></script>
-<div>
-<button type="button" onclick="changeScarf()">
-    Choose scarf
-</button>
-<button type="button" onclick="changeFace()">
-    Change my face
-</button>
-<button type="button" onclick="changeHat()">
-    Choose a hat
-</button>
-<button type="button" onclick="changeArmR()">
-    Change the right arm
-</button>
-<button type="button" onclick="changeArmL()">
-    Change the left arm
-</button>
-</div>
+    <style>
+        .snowmanLayers {
+            position: absolute;
+            left: 0px;
+            display: inline-flex;
+            align-items: center
+        }
+        .button {
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            position: absolute;
+            left: 305px;
+            z-index: 10;
+        }
+
+        .button1 {
+            background-color: white;
+        }
+    </style>
+    <script src="codeTest.js"></script>
+    <div>
+        <button class="button button1" style="top: 5px;" type="button" onclick="changeScarf()">
+            Choose scarf
+        </button>
+    </div>
+    <div>
+        <button class="button button1" style="top: 55px;" type="button" onclick="changeFace()">
+            Change my face
+        </button>
+    </div>
+    <div>
+        <button class="button button1" style="top: 105px;" type="button" onclick="changeHat()">
+            Choose a hat
+        </button>
+    </div>
+    <div>
+        <button class="button button1" style="top: 155px;" type="button" onclick="changeArmR()">
+            Change the right arm
+        </button>
+    </div>
+    <div>
+        <button class="button button1" style="top: 205px;" type="button" onclick="changeArmL()">
+            Change the left arm
+        </button>
+    </div>
     <audio id="audio1" src="Oolala.mp3"></audio>
 </body>
 </html>
