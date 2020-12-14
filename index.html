@@ -7,25 +7,25 @@
 <body>
     <h1>Build a Snowman!</h1>
     <div>
-        <div name="background" class="snowmanLayers" style=" top:140px; z-index:1; ">
+        <div name="background" class="snowmanLayers" style=" z-index:1; ">
             <img id="base" , src="snowman_images/Layer 1.png" style="width:300px; height:300px" />
         </div>
-        <div name="snowmanBase" class="snowmanLayers" style=" top:140px; z-index:2;">
+        <div name="snowmanBase" class="snowmanLayers" style=" z-index:2;">
             <img id="base" , src="snowman_images/snowballs.png" style="width:300px; height:300px" />
         </div>
-        <div name="face Layer" class="snowmanLayers" style=" top:140px; z-index:3;">
+        <div name="face Layer" class="snowmanLayers" style=" z-index:3;">
             <img id="face" , src="snowman_images/face_1.png" style="width:300px; height:300px" />
         </div>
-        <div name="hatLayer" class="snowmanLayers" style=" top:140px; z-index:4;">
+        <div name="hatLayer" class="snowmanLayers" style=" z-index:4;">
             <img id="hat" , src="snowman_images/tophat.png" style="width:300px; height:300px" />
         </div>
-        <div name="scarfLayer" class="snowmanLayers" style=" top:140px; z-index:5;">
+        <div name="scarfLayer" class="snowmanLayers" style=" z-index:5;">
             <img id="scarf" , src="snowman_images/scarf_red.png" style="width:300px; height:300px" />
         </div>
-        <div name="armLayerR" class="snowmanLayers" style=" top:140px; z-index:6;">
+        <div name="armLayerR" class="snowmanLayers" style=" z-index:6;">
             <img id="armR" , src="snowman_images/branch_1_r.png" style="width:300px; height:300px" />
         </div>
-        <div name="armLayerL" class="snowmanLayers" style=" top:140px; z-index:7;">
+        <div name="armLayerL" class="snowmanLayers" style=" z-index:7;">
             <img id="armL" , src="snowman_images/branch_1_l.png" style="width:300px; height:300px" />
         </div>
     </div>
@@ -35,11 +35,13 @@
             position: absolute;
             left: 0px;
             display: inline-flex;
-            align-items: center
+            align-items: center;
+            top: 100px;
         }
+
         .button {
             border: none;
-            color: black;
+            color: white;
             padding: 15px 32px;
             text-align: center;
             text-decoration: none;
@@ -53,35 +55,38 @@
         }
 
         .button1 {
-            background-color: white;
+            background-color: black;
         }
     </style>
     <script src="codeTest.js"></script>
     <div>
-        <button class="button button1" style="top: 5px;" type="button" onclick="changeScarf()">
-            Choose scarf
+        <button class="button button1" style="top: 105px;" type="button" onclick="changeScarf()">
+            Choose a scarf
         </button>
     </div>
     <div>
-        <button class="button button1" style="top: 55px;" type="button" onclick="changeFace()">
+        <button class="button button1" style="top: 155px;" type="button" onclick="changeFace()">
             Change my face
         </button>
     </div>
     <div>
-        <button class="button button1" style="top: 105px;" type="button" onclick="changeHat()">
+        <button class="button button1" style="top: 205px;" type="button" onclick="changeHat()">
             Choose a hat
         </button>
     </div>
     <div>
-        <button class="button button1" style="top: 155px;" type="button" onclick="changeArmR()">
+        <button class="button button1" style="top: 255px;" type="button" onclick="changeArmR()">
             Change the right arm
         </button>
     </div>
     <div>
-        <button class="button button1" style="top: 205px;" type="button" onclick="changeArmL()">
+        <button class="button button1" style="top: 305px;" type="button" onclick="changeArmL()">
             Change the left arm
         </button>
     </div>
-    <audio id="audio1" src="Oolala.mp3"></audio>
+    <audio id="oolala" src="sounds/Oolala.mp3"></audio>
+    <audio id="wind" src="sounds/wind-blow.mp3"> </audio>
+    <audio id="rustle1" src="sounds/leaf-rustle.mp3"> </audio>
+    <audio id="rustle2" src="sounds/leaf-rustle2.mp3"> </audio>
 </body>
 </html>

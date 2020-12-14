@@ -4,7 +4,7 @@ var hatValue = 1;
 var armRValue = 1;
 var armLValue = 1;
 function changeFace() {
-    playAudio("audio1");
+    playAudio("oolala");
     if (faceValue < 3) {
         faceValue += 1;
     } 
@@ -24,7 +24,7 @@ function changeFace() {
 }
 
 function changeScarf() {
-    /*playAudio("audio1");*/
+    /*playAudio("oolala");*/
     if (scarfValue < 6) {
         scarfValue += 1;
     }
@@ -53,7 +53,7 @@ function changeScarf() {
 }
 
 function changeHat() {
-    /* playAudio("audio1"); */
+    playAudio("wind");
     if (hatValue < 4) {
         hatValue += 1;
     }
@@ -76,7 +76,7 @@ function changeHat() {
 }
 
 function changeArmR() {
-    /* playAudio("audio1"); */
+    playAudio("rustle1");
     if (armRValue < 3) {
         armRValue += 1;
     }
@@ -96,7 +96,7 @@ function changeArmR() {
 }
 
 function changeArmL() {
-    /* playAudio("audio1"); */
+    playAudio("rustle2");
     if (armLValue < 3) {
         armLValue += 1;
     }
