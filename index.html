@@ -3,27 +3,31 @@
 <html>
 <body>
     <h1 style="text-align:center; ">Build a Snowman!</h1>
+
+    <!--stacking layers of transparent png details on top of snowman and background image-->
     <div class="snowmanLayers">
-        
-            <img id="base" class="snowmanImages" src="snowman_images/Layer 1.png" style=" z-index:1;" /> 
-            <img id="snowballs" class="snowmanImages" src="snowman_images/snowballs.png" style=" z-index: 2;" />
-            <img id="face" class="snowmanImages" src="snowman_images/face_1.png" style=" z-index: 3;" />
-            <img id="hat" class="snowmanImages" src="snowman_images/tophat.png" style=" z-index: 4;" />
-            <img id="scarf" class="snowmanImages" src="snowman_images/scarf_red.png" style=" z-index: 5;" />
-            <img id="armR" class="snowmanImages" src="snowman_images/branch_1_r.png" style=" z-index: 6;" />
-            <img id="armL" class="snowmanImages" src="snowman_images/branch_1_l.png" style=" z-index: 7;" />
-        
+
+        <img id="base" class="snowmanImages" src="snowman_images/Layer 1.png" style=" z-index:1;" />
+        <img id="snowballs" class="snowmanImages" src="snowman_images/snowballs.png" style=" z-index: 2;" />
+        <img id="face" class="snowmanImages" src="snowman_images/face_1.png" style=" z-index: 3;" />
+        <img id="hat" class="snowmanImages" src="snowman_images/tophat.png" style=" z-index: 4;" />
+        <img id="scarf" class="snowmanImages" src="snowman_images/scarf_red.png" style=" z-index: 5;" />
+        <img id="armR" class="snowmanImages" src="snowman_images/branch_1_r.png" style=" z-index: 6;" />
+        <img id="armL" class="snowmanImages" src="snowman_images/branch_1_l.png" style=" z-index: 7;" />
+
     </div>
 
+    <!--css-->
     <style>
         .snowmanImages {
             display: block;
-            position:absolute;
+            position: absolute;
             left: 0px;
             top: 0px;
             width: 300px;
             height: 300px;
         }
+
         .snowmanLayers {
             position: relative;
             left: 0px;
@@ -57,6 +61,7 @@
             width: 300px;
             padding: 10px;
         }
+
         .button1 {
             background-color: black;
         }
@@ -64,44 +69,46 @@
 
     <script src="codeTest.js"></script>
 
-    <table class="table" >
-    <tr>
-        <th colspan="2">
-        <button class="button button1" type="button" onclick="changeHat()">
-            Choose a hat
-        </button>
-        </th>
-    </tr>
-    <tr>
-        <th colspan="2">
-        <button class="button button1" type="button" onclick="changeFace()">
-            Change the face
-        </button>
-        </th>
-    </tr>
-    <tr>
-        <th colspan="2">
-        <button class="button button1" type="button" onclick="changeScarf()">
-            Choose a scarf
-        </button>
-        </th>
+    <!--table with control buttons inside-->
+    <table class="table">
+        <tr>
+            <th colspan="2">
+                <button class="button button1" type="button" onclick="changeHat()">
+                    Choose a hat
+                </button>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <button class="button button1" type="button" onclick="changeFace()">
+                    Change the face
+                </button>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <button class="button button1" type="button" onclick="changeScarf()">
+                    Choose a scarf
+                </button>
+            </th>
 
-    </tr>
-    <tr>
-        <td>
-        <button class="button button1" type="button" onclick="changeArmL()">
-            Change the left arm
-        </button>
-        </td>
-        <td>
-        <button class="button button1" type="button" onclick="changeArmR()">
-            Change the right arm
-        </button>
-        </td>
-    </tr>
-   
+        </tr>
+        <tr>
+            <td>
+                <button class="button button1" type="button" onclick="changeArmL()">
+                    Change the left arm
+                </button>
+            </td>
+            <td>
+                <button class="button button1" type="button" onclick="changeArmR()">
+                    Change the right arm
+                </button>
+            </td>
+        </tr>
+
     </table>
-   
+
+    <!--audio assets*/-->
     <audio id="oolala" src="sounds/Oolala.mp3"></audio>
     <audio id="wind" src="sounds/wind-blow-quiet.mp3"> </audio>
     <audio id="rustle1" src="sounds/leaf-rustle.mp3"> </audio>

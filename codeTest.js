@@ -1,11 +1,16 @@
-﻿var faceValue = 1;
+﻿/* initialize variables and set their values equal to 1*/
+var faceValue = 1;
 var scarfValue = 1;
 var hatValue = 1;
 var armRValue = 1;
 var armLValue = 1;
 
+/* functions that play the audio and determine which png to change the img element's src to*/
 function changeFace() {
+    /*call the playAudio function to play the sound associated with the button*/
     playAudio("oolala");
+
+    /*increment the value by 1 unless value is equal to the number of images, else reset value to 1*/
     if (faceValue < 3) {
         faceValue += 1;
     } 
@@ -14,6 +19,7 @@ function changeFace() {
     }
 
     if (faceValue == 1) {
+        /*find the img element by the id 'face' and change its source to the correct png*/
         document.getElementById('face').src = "snowman_images/face_1.png";
     }
     if (faceValue == 2) {
@@ -23,7 +29,6 @@ function changeFace() {
         document.getElementById('face').src = "snowman_images/face_3.png";
     }
 }
-
 function changeScarf() {
     playAudio("wonderful");
     if (scarfValue < 6) {
@@ -116,7 +121,9 @@ function changeArmL() {
     }
 }
 
+
 function playAudio(audioID) {
+/*get the audio element by the id inputed as a parameter when it is called*/
     var audio = document.getElementById(audioID);
     audio.play();
 }
