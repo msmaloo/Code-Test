@@ -3,6 +3,7 @@ var scarfValue = 1;
 var hatValue = 1;
 var armRValue = 1;
 var armLValue = 1;
+
 function changeFace() {
     playAudio("oolala");
     if (faceValue < 3) {
@@ -24,7 +25,7 @@ function changeFace() {
 }
 
 function changeScarf() {
-    /*playAudio("oolala");*/
+    playAudio("wonderful");
     if (scarfValue < 6) {
         scarfValue += 1;
     }
